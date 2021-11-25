@@ -1,6 +1,6 @@
 # use-lanyard
 
-> A React Hook for Lanyard 
+> A React Hook for Lanyard. An API that exposes your Discord & Spotify presence to the web!
 
 [![NPM](https://img.shields.io/npm/v/use-lanyard.svg)](https://www.npmjs.com/package/use-lanyard) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,13 +15,13 @@ npm install --save use-lanyard
 ```tsx
 import * as React from 'react'
 
-import { useMyHook } from 'use-lanyard'
+import { useLanyard } from 'use-lanyard'
 
 const Example = () => {
-  const example = useMyHook()
+  const state = useLanyard('DISCORD_ID')
   return (
     <div>
-      {example}
+      {state.listening_to_spotify ? `Wohoo! I'm listening to Spotify right now.` : `I'm not listening to anything right now :(`}
     </div>
   )
 }
@@ -30,7 +30,3 @@ const Example = () => {
 ## License
 
 MIT © [220ish](https://github.com/220ish)
-
----
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).

@@ -1,7 +1,7 @@
 {
-  "name": "use-lanyard",
+  "name": "use-lanyard-react",
   "version": "1.0.0",
-  "description": "A React Hook for Lanyard ",
+  "description": "A React Hook for Lanyard. An API that exposes your Discord & Spotify presence to the web!",
   "author": "220ish",
   "license": "MIT",
   "repository": "220ish/use-lanyard",

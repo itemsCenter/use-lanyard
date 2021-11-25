@@ -1,12 +1,12 @@
-import { useMyHook } from './'
+import { useLanyard } from './'
 import { renderHook, act } from "@testing-library/react-hooks";
 
 // mock timer using jest
 jest.useFakeTimers();
 
-describe('useMyHook', () => {
-  it('updates every second', () => {
-    const { result } = renderHook(() => useMyHook());
+describe('useLanyard', () => {
+  it('updates your presence state every 10 seconds', () => {
+    const { result } = renderHook(() => useLanyard('865727486335254558'));
 
     expect(result.current).toBe(0);
 
