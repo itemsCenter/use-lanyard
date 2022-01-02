@@ -7,7 +7,9 @@
 ## Install
 
 ```bash
-npm install --save use-lanyard
+npm install --save use-lanyard-react
+or
+yarn add use-lanyard-react
 ```
 
 ## Usage
@@ -15,7 +17,7 @@ npm install --save use-lanyard
 ```tsx
 import * as React from 'react'
 
-import { useLanyard } from 'use-lanyard'
+import { useLanyard } from 'use-lanyard-react'
 
 const Example = () => {
   const state = useLanyard('DISCORD_ID')
