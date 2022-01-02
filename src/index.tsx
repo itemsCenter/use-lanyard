@@ -22,7 +22,7 @@ const getLanyard = async (discordId: string): Promise<HTTPResponse> => {
     fetch('https://api.lanyard.rest/v1/users/' + discordId)
     .then(response => response.json())
     .then(response => response as HTTPResponse)
-    .then(response => resolve(response))
-    .catch((error) => reject(error))
+    .then(resolve)
+    .catch(reject)
   })
 }
